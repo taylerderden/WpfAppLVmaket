@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="gViewWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Margin="0,10,0,0" Name="DataGridClient" IsReadOnly="True" AutoGenerateColumns="False" Background="DimGray" Height="424" VerticalAlignment="Top">
+        <DataGrid Name="DataGridClient" IsReadOnly="True" AutoGenerateColumns="False" Background="DimGray" Height="434" VerticalAlignment="Center">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="*" Binding="{Binding Id}">
                     <DataGridTextColumn.Header>

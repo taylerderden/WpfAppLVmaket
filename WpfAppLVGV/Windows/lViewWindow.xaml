@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="lViewWindow" Height="450" Width="800">
     <Grid>
-        <ListView Name="ListViewClient" ItemsSource="{Binding Client}">
+        <ListView Name="ListViewClient" ItemsSource="{Binding Client}" Margin="0,53,0,0">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="id" Width="50"></GridViewColumn>
@@ -18,5 +18,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
+
+        <TextBox x:Name="tbSearch" TextChanged="tbSearchChanged" HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" FontSize="20"/>
+        <ComboBox x:Name="cbSort" SelectionChanged="cbSortChanged" HorizontalAlignment="Left" Margin="540,12,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="28"/>
+        <ComboBox x:Name="cbFiltr" SelectionChanged="cbFiltrChanged" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top" Width="240" FontSize="20" Height="28"/>
     </Grid>
 </Window>
